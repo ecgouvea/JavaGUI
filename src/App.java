@@ -46,7 +46,7 @@ public class App {
                     HttpResponse<String> response = HttpClient.newHttpClient().send(request, BodyHandlers.ofString());
                     String body = response.body();
                     System.out.println(body);
-                    textArea.setText(body);
+                    textArea.setText(body + "\n\n\n\nAPI called successfully.");
                 } catch (URISyntaxException e1) {
                     // TODO Auto-generated catch block
                     e1.printStackTrace();
